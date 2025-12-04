@@ -21,7 +21,7 @@ if (ini_get("session.use_cookies")) {
 // 3. Destrói a sessão
 session_destroy();
 
-// 4. Remove o COOKIE de admin_status (se existir)
+// 4. Remove o COOKIE de admin_status (se existir) -- Não consegui ter tempo para colocar dados sensíveis em sessões, então ficou assim mesmo
 if (isset($_COOKIE['admin_status'])) {
     // Define a data de expiração para o passado para remover o cookie
     setcookie('admin_status', '', time() - 3600, "/"); // "/" para garantir que seja removido de todo o site

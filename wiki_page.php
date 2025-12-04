@@ -41,7 +41,7 @@ verificaLogin();
                          class="w-24 h-24 md:w-32 md:h-32 rounded-lg shadow-xl border-4 border-gray-700 -mb-12 md:-mb-16 md:mr-6 object-cover bg-gray-900" 
                     />
                     <!-- Título e Meta Dados -->
-                    <div class="mt-4 md:mt-0 md:ml-24 pt-4 md:pt-0">
+                    <div class="mt-4 md:mt-0 md:ml-22 pt-4 md:pt-0">
                         <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight">Honkai: Star Rail</h1>
                         <p class="text-yellow-400 text-lg">RPG de Turnos Estratégico • Desenvolvedora HoYoverse</p>
                     </div>
@@ -110,89 +110,76 @@ verificaLogin();
                 <h2 class="text-3xl font-bold mb-6 text-yellow-500">Elenco de Personagens Jogáveis</h2>
                 <p class="text-gray-400 mb-8">Navegue pelas fichas de alguns dos personagens mais populares da tripulação do Astral Express e seus aliados. Clique em um card para ver a ficha completa (funcionalidade futura).</p>
 
-                <!-- Grid de Cards de Personagens -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    
-                    <!-- Card Placeholder 1: March 7th -->
+                    <!-- Personagem 1: Noite Eterna --> 
                     <div class="bg-[#1e2329] rounded-lg shadow-lg hover:shadow-yellow-500/30 transition duration-300 transform hover:scale-[1.02] cursor-pointer border border-gray-700">
                         <div class="p-4">
-                            <h3 class="text-xl font-bold text-white mb-1">March 7th</h3>
+                            <h3 class="text-xl font-bold text-white mb-1">Noite Eterna</h3>
+                            <p class="text-yellow-400 text-sm mb-3">A Recordação</p>
+                            <img src="img/NoiteEterna.jpg" alt="Arte Noite Eterna"
+                                class="h-40 w-auto object-contain rounded-md mb-3 block mx-auto"/>
+                            <p class="text-sm text-gray-400 line-clamp-3">
+                                A Noite Eterna é uma presença serena e implacável, que envolve tudo com um silêncio acolhedor, mas carregado de presságios, como se guardasse segredos antigos demais para serem revelados à luz.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Personagem 2: DanHeng --> 
+                    <div class="bg-[#1e2329] rounded-lg shadow-lg hover:shadow-yellow-500/30 transition duration-300 transform hover:scale-[1.02] cursor-pointer border border-gray-700">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold text-white mb-1">Dan Heng Permansor Terrae</h3>
                             <p class="text-yellow-400 text-sm mb-3">A Preservação</p>
-                            <div class="h-40 bg-gray-800 rounded-md mb-3 flex items-center justify-center">
-                                <span class="text-gray-500">Arte do Personagem (Placeholder)</span>
-                            </div>
+                            <img src="img/DanHeng.webp" alt="Arte DanHeng"
+                                class="h-40 w-auto object-contain rounded-md mb-3 block mx-auto"/>
                             <p class="text-sm text-gray-400 line-clamp-3">
-                                Uma garota energética e otimista, resgatada do gelo espacial. Seu passado é um mistério, mas ela documenta fervorosamente sua vida presente com sua câmera.
+                                Um guarda silencioso e reservado do Astral Express. Agora absorvido com o poder do titã da terra "Terravox" abandonou seus erros do passado para proteger o expresso de novas ameaças
                             </p>
                         </div>
                     </div>
-
-                    <!-- Card Placeholder 2: Dan Heng -->
+                    <!-- Personagem 3: Cipher --> 
                     <div class="bg-[#1e2329] rounded-lg shadow-lg hover:shadow-yellow-500/30 transition duration-300 transform hover:scale-[1.02] cursor-pointer border border-gray-700">
                         <div class="p-4">
-                            <h3 class="text-xl font-bold text-white mb-1">Dan Heng</h3>
-                            <p class="text-yellow-400 text-sm mb-3">A Caça</p>
-                            <div class="h-40 bg-gray-800 rounded-md mb-3 flex items-center justify-center">
-                                <span class="text-gray-500">Arte do Personagem (Placeholder)</span>
-                            </div>
+                            <h3 class="text-xl font-bold text-white mb-1">Cipher</h3>
+                            <p class="text-yellow-400 text-sm mb-3">A Inexistência</p>
+                            <img src="img/Cipher.webp" alt="Arte Cipher"
+                                class="h-40 w-auto object-contain rounded-md mb-3 block mx-auto"/>
                             <p class="text-sm text-gray-400 line-clamp-3">
-                                Um guarda silencioso e reservado do Astral Express. Ele empunha uma lança e raramente fala sobre seu passado, mantendo-se sempre vigilante.
+                                A Ágil órfã adotada e presenteada pela Tecelã dourada, carregando a chama primoridal de "Zagreus" O titã da trapaça, que com sua mentira bem contada conseguiu sustentar a pólis sagrada de Okhema por 1000 anos
                             </p>
                         </div>
                     </div>
-
-                    <!-- Card Placeholder 3: Himeko -->
+                    <!-- Personagem 4: Jing Yuan --> 
                     <div class="bg-[#1e2329] rounded-lg shadow-lg hover:shadow-yellow-500/30 transition duration-300 transform hover:scale-[1.02] cursor-pointer border border-gray-700">
                         <div class="p-4">
-                            <h3 class="text-xl font-bold text-white mb-1">Himeko</h3>
+                            <h3 class="text-xl font-bold text-white mb-1">Jing Yuan</h3>
                             <p class="text-yellow-400 text-sm mb-3">A Erudição</p>
-                            <div class="h-40 bg-gray-800 rounded-md mb-3 flex items-center justify-center">
-                                <span class="text-gray-500">Arte do Personagem (Placeholder)</span>
-                            </div>
+                            <img src="img/JingYuan.png" alt="Arte Jing Yuan"
+                                class="h-40 w-auto object-contain rounded-md mb-3 block mx-auto"/>
                             <p class="text-sm text-gray-400 line-clamp-3">
-                                Uma cientista aventureira que consertou o Astral Express. Ela é uma pioneira confiável e usa o seu vasto conhecimento para guiar a expedição.
+                                O General da Nuvem de Yaoqing da Comissão de Julgamento de Luofu, é um estrategista mestre que prefere a paz, mas lidera com autoridade e poder quando a crise é inevitável.
                             </p>
                         </div>
                     </div>
-
-                    <!-- Card Placeholder 4: Welt -->
-                    <div class="bg-[#1e2329] rounded-lg shadow-lg hover:shadow-yellow-500/30 transition duration-300 transform hover:scale-[1.02] cursor-pointer border border-gray-700">
-                        <div class="p-4">
-                            <h3 class="text-xl font-bold text-white mb-1">Welt Yang</h3>
-                            <p class="text-yellow-400 text-sm mb-3">A Inexistência</p>
-                            <div class="h-40 bg-gray-800 rounded-md mb-3 flex items-center justify-center">
-                                <span class="text-gray-500">Arte do Personagem (Placeholder)</span>
-                            </div>
-                            <p class="text-sm text-gray-400 line-clamp-3">
-                                Um antigo Herói de outro mundo. Welt juntou-se ao Express para evitar que a crise voltasse a acontecer em novas galáxias.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card Placeholder 5: Kafka -->
-                    <div class="bg-[#1e2329] rounded-lg shadow-lg hover:shadow-yellow-500/30 transition duration-300 transform hover:scale-[1.02] cursor-pointer border border-gray-700">
-                        <div class="p-4">
-                            <h3 class="text-xl font-bold text-white mb-1">Kafka</h3>
-                            <p class="text-yellow-400 text-sm mb-3">A Inexistência</p>
-                            <div class="h-40 bg-gray-800 rounded-md mb-3 flex items-center justify-center">
-                                <span class="text-gray-500">Arte do Personagem (Placeholder)</span>
-                            </div>
-                            <p class="text-sm text-gray-400 line-clamp-3">
-                                Membro dos Caçadores de Stellaron. Sua reputação é conhecida em toda a galáxia por seus métodos pouco ortodoxos e seu charme perigoso.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card Placeholder 6: Blade -->
+                    <!-- Personagem 5: Blade --> 
                     <div class="bg-[#1e2329] rounded-lg shadow-lg hover:shadow-yellow-500/30 transition duration-300 transform hover:scale-[1.02] cursor-pointer border border-gray-700">
                         <div class="p-4">
                             <h3 class="text-xl font-bold text-white mb-1">Blade</h3>
                             <p class="text-yellow-400 text-sm mb-3">A Destruição</p>
-                            <div class="h-40 bg-gray-800 rounded-md mb-3 flex items-center justify-center">
-                                <span class="text-gray-500">Arte do Personagem (Placeholder)</span>
-                            </div>
+                            <img src="img/Blade.jpg" alt="Arte Blade"
+                                class="h-40 w-auto object-contain rounded-md mb-3 block mx-auto"/>
                             <p class="text-sm text-gray-400 line-clamp-3">
-                                Espadachim misterioso e perigoso, também membro dos Caçadores de Stellaron. Vive em constante dor e com sede de combate.
+                                Membro dos caçadores de Stellaron, preso em um corpo imortalizado pela "Abundância", buscando vingança por aquele culpado pelo seu fardo
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Personagem 6: Phainon --> 
+                    <div class="bg-[#1e2329] rounded-lg shadow-lg hover:shadow-yellow-500/30 transition duration-300 transform hover:scale-[1.02] cursor-pointer border border-gray-700">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold text-white mb-1">Phainon / Khaslana</h3>
+                            <p class="text-yellow-400 text-sm mb-3">A Destruição</p>
+                            <img src="img/Phainon.webp" alt="Arte Phainon"
+                                class="h-40 w-auto object-contain rounded-md mb-3 block mx-auto"/>
+                            <p class="text-sm text-gray-400 line-clamp-3">
+                                Um antigo Herói de outro mundo que se juntou ao Expresso para impedir que a crise cósmica que ele enfrentou volte a acontecer em novas galáxias. 
                             </p>
                         </div>
                     </div>
@@ -203,23 +190,17 @@ verificaLogin();
             <div id="tab-comments" class="tab-content hidden">   
                 <h2 class="text-3xl font-bold mb-4 text-yellow-500">Comentários da Comunidade</h2>
                 <div class="p-2 bg-[#1e2329] rounded-lg border border-gray-700 giscus-container">
-                    <!-- 
-                        INTEGRAÇÃO GISCUS (Sistema de Comentários)
-                        
-                        IMPORTANTE: Você precisará substituir os valores abaixo pelos seus próprios:
-                        data-repo, data-repo-id, data-category, data-category-id
-                    -->
-                    <script src="https://giscus.app/client.js"
-                        data-repo="[SEU_USERNAME]/[SEU_REPO]" 
-                        data-repo-id="[SEU_REPO_ID]"
-                        data-category="[SUA_CATEGORIA_DE_DISCUSSAO]"
-                        data-category-id="[SEU_CATEGORY_ID]"
+                    <<script src="https://giscus.app/client.js"
+                        data-repo="HeyZawer/TrabalhoFinalApiGiscus"
+                        data-repo-id="R_kgDOQistDA"
+                        data-category="General"
+                        data-category-id="DIC_kwDOQistDM4CzZ1C"
                         data-mapping="pathname"
                         data-strict="0"
                         data-reactions-enabled="1"
                         data-emit-metadata="0"
-                        data-input-position="top"
-                        data-theme="dark_protanopia"
+                        data-input-position="bottom"
+                        data-theme="preferred_color_scheme"
                         data-lang="pt"
                         crossorigin="anonymous"
                         async>

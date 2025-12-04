@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'banco_de_dados.php'; // Inclui o script de conexão
+require_once 'banco_de_dados.php';
 
 // Verifica se o método da requisição é POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -43,11 +43,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         // 4. Criptografa a senha (REQUISITO DE SEGURANÇA)
-        // O PASSWORD_ARGON2ID é ótimo, mantenha-o!
         $senha_hash = password_hash($senha, PASSWORD_ARGON2ID);
 
         // 5. Insere o novo usuário no banco usando prepared statements (INCLUSÃO DO nivel_acesso)
-        
         // Adiciona 'nivel_acesso' à lista de colunas
         $sql_insert = "INSERT INTO usuarios (nome, email, senha, nivel_acesso) VALUES (?, ?, ?, ?)"; 
         
@@ -63,7 +61,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } catch (PDOException $e) {
         // Em produção, logar o erro. Para o usuário, uma mensagem genérica.
         $_SESSION['register_message'] = "Ocorreu um erro no servidor. Tente mais tarde.";
-        // error_log("Erro no cadastro: " . $e->getMessage()); // Linha para log de erros
     }
 
     header("Location: index.php");

@@ -4,7 +4,6 @@ body {
     background-color: #1a1a1a;
     color: #fff;
     margin: 0;
-    /* REMOVE os estilos de centralização forçada (para o dashboard usar a largura total) */
     min-height: 100vh; /* Garante que o fundo cubra toda a tela */
 }
 
@@ -47,6 +46,7 @@ h2 {
 
 .btn-logout:hover {
     background-color: #c82333;
+    margin-top: 0;
 }
 
 /* Estilos para Tabela de Usuários */
@@ -205,4 +205,27 @@ a.delete-btn {
 
 a.delete-btn:hover {
     background-color: #c82333;
+}
+
+/* --- Estilo para o Botão/Link da Wiki --- */
+.btn-nav-wiki {
+    display: inline-block;
+    padding: 8px 15px; 
+    background-color: #007bff; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px; 
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 10px; 
+    
+    margin-top: 0; 
+}
+
+.btn-nav-wiki:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+}
+
+header.flex {
+    align-items: center; 
 }

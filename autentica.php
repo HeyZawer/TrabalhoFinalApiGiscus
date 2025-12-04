@@ -67,10 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Armazena dados do usuário na sessão
             $_SESSION['usuario_id'] = $usuario['id'];
             $_SESSION['usuario_nome'] = $usuario['nome'];
-            
-            // LÓGICA DO COOKIE DE ADMINISTRAÇÃO 
             if ($usuario['nivel_acesso'] === 'admin') {
-                // Define o cookie 'admin_status' como 'true' por 1 hora
                 setcookie('admin_status', 'true', time() + 3600, "/");
             } else {
                 // Caso não seja admin, define como 'false'
@@ -92,7 +89,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     } catch (PDOException $e) {
         $_SESSION['login_error'] = "Ocorreu um erro no servidor. Tente mais tarde.";
-        // Em um ambiente de produção, registre o erro detalhado: error_log("Erro na autenticação: " . $e->getMessage());
         header("Location: index.php");
         exit();
     }
