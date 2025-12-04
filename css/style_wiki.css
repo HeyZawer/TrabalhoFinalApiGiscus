@@ -1,0 +1,32 @@
+/* Estilos Específicos para a Página da Wiki */
+
+/* Define a fonte Inter (configurada no PHP) */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilos para a navegação de abas (replicando o @apply do Tailwind) */
+.tab-btn {
+    padding: 8px 16px;
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.tab-btn:hover {
+    border-bottom-color: #facc15; /* yellow-400 */
+    color: #facc15; /* yellow-400 */
+}
+
+.tab-btn.active {
+    border-bottom-color: #eab308; /* yellow-500 */
+    color: #eab308; /* yellow-500 */
+    font-weight: 700; /* font-bold */
+}
+
+/* Garante que o contêiner Giscus use a largura total */
+.giscus-container {
+    width: 100%;
+}
