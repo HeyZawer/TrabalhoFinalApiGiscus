@@ -93,7 +93,7 @@ CREATE TABLE usuarios(
 
 INSERT INTO usuarios (nome, email, senha, nivel_acesso) VALUES (
  'Admin',
- 'admin@admin.com',
+ 'admin@email.com',
  '$2y$10$.uUS04ZucAMdNUzcOF4FkOnW8Vrj4h.RBLs5mXZ6nr6ELQ0FEmE66',
  'admin'
 );
